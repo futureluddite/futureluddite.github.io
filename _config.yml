@@ -21,8 +21,10 @@
 title: Robert Rayborn
 author: Robert Rayborn
 email: contact@robertrayborn.com
-description: >- # this means to ignore newlines until "baseurl:"
-  The professional home and personal musings of Robert Rayborn. This site went live in late 2020, and I will be updating its content frequently.
+description: >
+  The professional home and personal musings of Robert Rayborn.
+  Site went live in late 2020; I will be updating its content frequently.
+  © Robert Rayborn - 2020
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://robertrayborn.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: futureluddite
