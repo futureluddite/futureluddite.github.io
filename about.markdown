@@ -1,24 +1,12 @@
 ---
 layout: page
 title: About
-order: 10
 permalink: /about/
+custom_css: about
+order: 10
 ---
 
-<style>
-  .flexrow {
-    display: flex;
-  }
-  .flexcol {
-    flex: 1 auto;
-    padding: 10px;
-    max-height: 100%;
-  }
-  .inline-img {
-    height: 100%;
-    object-fit: contain;
-  }
-</style>
+
 
 Hi! I'm Robert Rayborn.
 

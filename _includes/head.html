@@ -4,46 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  {% if page.custom_css %}
+    {% for stylesheet in page.custom_css %}
+      <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css">
+    {% endfor %}
+  {% endif %}
   {%- feed_meta -%}
   {%- if jekyll.environment == 'production' and site.google_analytics -%}
     {%- include google-analytics.html -%}
   {%- endif -%}
 
-  <style>
-    .site-header {
-      background:#8BB6E1;
-    }
-    .menu-logo {
-      width:32px;
-      height:32px;
-      padding:10px;
-    }
-    footer {
-      background:#8BB6E1;
-    }
-    footer * {
-      color:#222 !important;
-    }
-    footer a {
-      color:blue !important;
-    }
-    footer a * {
-      color:blue !important;
-    }
-    footer .svg-icon{
-      fill:#222 !important;
-      stroke:#222 !important;
-      padding-top: 3px;
-    }
-    @media (min-width:800px) {
-      footer {
-        padding-top:15px !important;
-        background-image: url("/assets/images/mtHood.jpg");
-        background-size: 100% 100%;
-        background-repeat: no-repeat;
-        height: 290px;
-      }
-    }
-  </style>
-  <link rel="icon" type="image/png" href="/rr.png">
+  <link rel="icon" type="image/png" href="/assets/images/rr-favicon.png">
 </head>
