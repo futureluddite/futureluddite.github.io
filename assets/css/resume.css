@@ -90,7 +90,7 @@
   margin-left:15px;
   margin-bottom:0px;
 }
-li::before {
+.resume li::before {
     content: '\2B25';
     position: absolute;
     left: -5px;
@@ -100,6 +100,6 @@ li::before {
   padding-left:10px;
   padding-bottom: 1px;
 }
-a {
+.resume a {
   color: unset;
 }
