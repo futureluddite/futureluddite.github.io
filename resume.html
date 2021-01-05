@@ -9,12 +9,15 @@ permalink: /resume/
   .post-title {
     display:none;
   }
+  .post-header {
+    margin-bottom: unset;
+  }
   .resume {
     font-family: 'Roboto', sans-serif;
     max-width:850px;
     padding-left:10px;
-    padding-right:5px;
-    font-size:80%;
+    font-size:85%;
+    line-height: 1.2;
   }
 
   .resume .header {
@@ -22,30 +25,27 @@ permalink: /resume/
     width: 67%;
     max-width: 350px;
     margin:auto;
-    padding-bottom: 1px;
+    padding-bottom: 3px;
   }
   .resume h1 {
     font-size:200%;
     font-weight: bold;
-    margin-top: 3px;
-    margin-bottom: 3px;
   }
   .resume h2 {
-    position:relative;
-    left:-10px;
-    width:103%;
+    width:100%;
     font-size:175%;
     font-weight: bold;
-    margin-top: 3px;
-    margin-bottom: 3px;
-    border-bottom:solid 1px black;
-
+    margin-top: 5px;
+    padding-bottom: 2px;
+    margin-bottom: 1px;
+    border-bottom:solid 1px black
   }
   .resume .columns {
     display:flex;
     justify-content: space-between;
-    padding-bottom:3px;
-    font-size:120%;
+    padding-bottom:4px;
+    padding-top:2px;
+    font-size:110%;
   }
   .resume .columns > div {
     flex:1;
@@ -65,7 +65,7 @@ permalink: /resume/
   .resume .qtitle{
     min-width:120px !important;
     font-weight: bold;
-    font-size:120%;
+    font-size:110%;
   }
   .resume .qitem{
     display:inline-block;
@@ -92,9 +92,16 @@ permalink: /resume/
     margin-bottom:5px;
   }
   .resume ul {
-    list-style-type: "\2B25";
+    list-style-type: none;
+    position: relative;
     margin-left:15px;
     margin-bottom:0px;
+  }
+  li::before {
+      content: '\2B25';
+      position: absolute;
+      left: -5px;
+      font-size: 12px;
   }
   .resume li {
     padding-left:10px;
