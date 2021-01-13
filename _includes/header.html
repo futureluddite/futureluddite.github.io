@@ -2,7 +2,11 @@
   <div class="wrapper">
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
-    <a rel="author" href="{{ "/" | relative_url }}"><img class="menu-logo" src="/assets/images/rr.png" alt="Robert Rayborn" title="Robert Rayborn" itemprop="logo"></a>
+    <!--a rel="author" href="{{ "/" | relative_url }}"><img class="menu-logo" src="/assets/images/rr.png" alt="Robert Rayborn" title="Robert Rayborn" itemprop="logo"></a-->
+    <a id="menu-link" rel="author" href="{{ "/" | relative_url }}">
+      <svg id="menu-logo"><use xlink:href="/assets/images/rr.svg#simple" height="32" width="32" /></svg>
+    </a>
+
 
     <!--a class="site-title" rel="author" href="{{ "/" | relative_url }}">{{ site.title | escape }}</a-->
 

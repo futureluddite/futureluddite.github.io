@@ -1,31 +1,53 @@
 .site-header {
-  background:#8BB6E1;
+  background: #8BB6E1;
 }
-.menu-logo {
-  width:32px;
-  height:32px;
-  padding:10px;
+#menu-logo {
+  width: 32px;
+  height: 32px;
+  margin: 10px;
+}
+#menu-link {
+  display: inline-block;
+  width: max-content;
+  height: max-content;
 }
 footer {
-  background:#8BB6E1;
+  background: #8BB6E1;
 }
 footer * {
-  color:#222 !important;
+  color: #222 !important;
 }
 footer a {
-  color:blue !important;
+  color: blue !important;
 }
 footer a * {
-  color:blue !important;
+  color: blue !important;
 }
 footer .svg-icon{
-  fill:#222 !important;
-  stroke:#222 !important;
+  fill: #222 !important;
+  stroke: #222 !important;
   padding-top: 3px;
 }
-@media (min-width:800px) {
+@media screen and (max-width: 600px) {
+  .site-nav {
+    background-color: unset;
+    border: unset;
+  }
+  .site-nav label[for="nav-trigger"] {
+    margin-bottom: 12px;
+  }
+  .site-nav .trigger {
+    background-color: #fdfdfd;
+    border: solid lightgray 2px;
+  }
+  .site-nav .page-link {
+    margin-left: unset;
+  }
+}
+
+@media (min-width: 800px) {
   footer {
-    padding-top:15px !important;
+    padding-top: 15px !important;
     background-image: url("/assets/images/mtHood.jpg");
     background-size: 100% 100%;
     background-repeat: no-repeat;

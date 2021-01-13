@@ -1,15 +1,15 @@
 
 .post-title {
-  display:none;
+  display: none;
 }
 .post-header {
   margin-bottom: unset;
 }
 .resume {
   font-family: 'Roboto', sans-serif;
-  max-width:850px;
-  padding-left:10px;
-  font-size:85%;
+  max-width: 850px;
+  padding-left: 10px;
+  font-size: 85%;
   line-height: 1.2;
 }
 
@@ -17,87 +17,87 @@
   text-align: center;
   width: 67%;
   max-width: 350px;
-  margin:auto;
+  margin: auto;
   padding-bottom: 3px;
 }
 .resume h1 {
-  font-size:200%;
+  font-size: 200%;
   font-weight: bold;
 }
 .resume h2 {
-  width:100%;
-  font-size:175%;
+  width: 100%;
+  font-size: 175%;
   font-weight: bold;
   margin-top: 5px;
   padding-bottom: 2px;
   margin-bottom: 1px;
-  border-bottom:solid 1px black
+  border-bottom: solid 1px black
 }
 .resume .columns {
-  display:flex;
+  display: flex;
   justify-content: space-between;
-  padding-bottom:4px;
-  padding-top:2px;
-  font-size:110%;
+  padding-bottom: 4px;
+  padding-top: 2px;
+  font-size: 110%;
 }
 .resume .columns > div {
-  flex:1;
-  max-width:max-content;
+  flex: 1;
+  max-width: max-content;
   text-align: center;
   font-weight: bold;
 }
 .resume .qualification {
-  display:flex;
+  display: flex;
   justify-content: left;
 }
 .resume .qualification > div {
-  padding:5px;
-  flex:1;
-  max-width:max-content;
+  padding: 5px;
+  flex: 1;
+  max-width: max-content;
 }
-.resume .qtitle{
-  min-width:120px !important;
+.resume .qtitle {
+  min-width: 120px !important;
   font-weight: bold;
-  font-size:110%;
+  font-size: 110%;
 }
-.resume .qitem{
-  display:inline-block;
+.resume .qitem {
+  display: inline-block;
   padding-right: 10px
 }
 
 .resume .s1 {
-  font-weight:bold;
-  color:#000000;
+  font-weight: bold;
+  color: #000000;
 }
 .resume .s2 {
-  color:#333333;
+  color: #333333;
 }
 .resume .resume .s3 {
-  color:#666666;
+  color: #666666;
 }
 .resume .s4 {
-  color:#999999;
+  color: #999999;
 }
 .resume .s5 {
-  color:#CCCCCC;
+  color: #CCCCCC;
 }
 .resume p {
-  margin-bottom:5px;
+  margin-bottom: 5px;
 }
 .resume ul {
   list-style-type: none;
   position: relative;
-  margin-left:15px;
-  margin-bottom:0px;
+  margin-left: 15px;
+  margin-bottom: 0px;
 }
-.resume li::before {
+.resume li: : before {
     content: '\2B25';
     position: absolute;
     left: -5px;
     font-size: 12px;
 }
 .resume li {
-  padding-left:10px;
+  padding-left: 10px;
   padding-bottom: 1px;
 }
 .resume a {

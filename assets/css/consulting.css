@@ -1,3 +1,6 @@
+form {
+  max-width: max-content;
+}
 .inquiries label {
   display: block;
   padding-top: 10px;
@@ -11,14 +14,12 @@
   left: 5%;
   background-image: unset;
 }
-.inquiries form {
-  width: max-content;
-}
 .inquiries button {
   margin: 0;
   position: relative;
   width: 20%;
   left: 40%;
+  font-size: 100%;
 }
 .inquiries .required:after {
   color: darkred;
