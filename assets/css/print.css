@@ -1,0 +1,11 @@
+header, footer {
+  display: none;
+}
+body {
+  font-size: 115%;
+}
+.page-content, .wrapper, .resume{
+  padding: unset;
+  margin: unset;
+  max-width: unset;
+}

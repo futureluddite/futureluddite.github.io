@@ -5,6 +5,7 @@
   {%- seo -%}
   <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
   <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <link rel="stylesheet" media="print" href="/assets/css/print.css" />
   {% if page.custom_css %}
     {% for stylesheet in page.custom_css %}
       <link rel="stylesheet" href="/assets/css/{{ stylesheet }}.css">
