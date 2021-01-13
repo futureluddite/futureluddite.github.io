@@ -1,5 +1,6 @@
 .site-header {
   background: #8BB6E1;
+  border-top: unset;
 }
 #menu-logo {
   width: 32px;
