@@ -4,7 +4,9 @@
 
 layout: home
 ---
-Hi there! My blog posts will live here eventually, for now the menu contains all of the top level subpages of interest.
+Hi there,
 
-<img style="width:500px;max-width:100%;display:block;margin-left: auto;margin-right: auto;" src="/assets/images/ifIHadOne.jpg" alt="Rob & Caitlin" class="inline-img" />
+My personal blog is hosted below, and don't forget the professional and personal links available in the menu! Thanks for stopping by!
+
+<!-- img style="width:500px;max-width:100%;display:block;margin-left: auto;margin-right: auto;" src="/assets/images/ifIHadOne.jpg" alt="Rob & Caitlin" class="inline-img" /-->
 

@@ -1,0 +1,113 @@
+---
+layout: page
+permalink: /dogs/
+---
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/crypto-js/3.1.2/rollups/aes.js'></script>
+<script type='text/javascript'>
+  //<![CDATA[
+  $(document).ready(function() {
+    var encrypted_data = {
+      'cphone':            'U2FsdGVkX19Swnai6UUhUCT9aAKFz/39TQ0rZ63hKOc=',
+      'rphone':            'U2FsdGVkX18nCkFA5A6lnGwqO3RMk7DsXwFb+8HmPIc=',
+      'shared_email':      'U2FsdGVkX18dQQGFZi/vzTui4tMxhzQgDgrq8+jP4y8v/YRUdJdnLC3EVGWCqBn4',
+      'address':           'U2FsdGVkX18Gw0Z3wB2dFKj3HqtvNRgiBKEKIdGxlPetViiFLg0UnSbR2iwxyGBdqg5gT4mtDeffSpRPkm3l1A==',
+      'klaus_description': 'U2FsdGVkX1+PmBf4Ijj82m5cRqxP5Uuy9/tbv6MfCVE5PS9BB9iM+8wxWQRlyNRX2clgQENupMltgtgVVkqCGIPJkOwlTJX8HwIJBaFyl2rv2wBMPJThUdiMzNtYhtOy9p1x0I6Ltc+gsF3BiknOkBjsuLndSrK/v7RvgXU7lEn0jXZq1UAjk2N3XtPdbeB8',
+      'mav_description':   'U2FsdGVkX1+NV3sL3iS8i4f/vpfZ24O3MRhGZxxFreU3GpniDQ0YXpJo1dR+yQnUVG/whSCApiqlC6HOk2+BHwMG3x92pT5E9WGTl0Hv1OsmYsDihn7x6QmTGWFtm34EvXjt3s1cfnd5aZcgfl/J7mS8z+/oOn9L4KU5s/RhYS9iWg559a120lZMgwSnpfF9'
+    };
+
+    var urlParams = new URLSearchParams(window.location.search);
+    var secret    = urlParams.get('k'); //key
+    var test      = urlParams.get('t'); //test
+    var encrypt   = urlParams.get('e'); //encryption direction
+    if (secret) {
+      if (test) { // Testing
+        console.log([secret,test,encrypt])
+        if (encrypt) { // Direction of Encryption because I'm lazy
+          Object.keys(encrypted_data).forEach(key => {
+            var entry = CryptoJS.AES.encrypt(encrypted_data[key], secret).toString();
+            console.log([key, encrypted_data[key], entry]);
+          });
+        } else {
+          Object.keys(encrypted_data).forEach(key => {
+            var entry = CryptoJS.AES.decrypt(encrypted_data[key], secret).toString(CryptoJS.enc.Utf8);
+            console.log([key, encrypted_data[key], entry]);
+          });
+        }
+      } else { // We have the secret AND can run
+        Object.keys(encrypted_data).forEach(key => {
+          var entry = CryptoJS.AES.decrypt(encrypted_data[key], secret).toString(CryptoJS.enc.Utf8);
+          $('#'+key).html(entry);
+        });
+      }
+      $('.hidden-encrypted').show()
+    }
+  });
+  //]]>
+</script>
+<style type='text/css'>
+  .dog-table td, .dog-table th {
+    width:50%;
+    border:unset !important;
+  }
+  .dog-table img {
+    height:262.5px;
+  }
+  .hidden-encrypted {
+    display:none;
+  }
+  h1 {
+    margin-top: 20px;
+  }
+</style>
+
+<div class='hidden-encrypted'>Did you find our dog(s)? Thank you! Below you'll find information about them and our contact info.</div>
+
+
+<h1>Dogs</h1>
+<table class='dog-table'>
+  <tr>
+    <th>Klaus</th>
+    <th>Maverick</th>
+  </tr>
+  <tr>
+    <td><img src='/assets/images/klaus.jpg' alt='Klaus' class='inline-img-width' /></td>
+    <td><img src='/assets/images/mav.jpg' alt='Mav' class='inline-img-width' /></td>
+  </tr>
+  <tr>
+    <td>
+      <div class='description hidden-encrypted'>
+        <div style='font-weight:bold;'>Description</div> <div id='klaus_description'></div>
+      </div>
+    </td>
+    <td>
+      <div class='description hidden-encrypted'>
+        <div style='font-weight:bold;'>Description</div> <div id='mav_description'></div>
+      </div>
+    </td>
+  </tr>
+</table>
+
+
+<div class='hidden-encrypted'>
+  <h1>Contact</h1>
+  <table class='contact-table' style='margin-bottom: 10px;'>
+    <tr>
+      <td>Rob Phone</td>
+      <td id='rphone'></td>
+    </tr>
+    <tr>
+      <td>Caitlin Phone</td>
+      <td id='cphone'></td>
+    </tr>
+    <tr>
+      <td>Shared Email</td>
+      <td id='shared_email'></td>
+    </tr>
+    <tr>
+      <td>Address</td>
+      <td id='address'></td>
+    </tr>
+  </table>
+</div>

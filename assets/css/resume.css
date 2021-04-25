@@ -15,18 +15,19 @@
 
 .resume .header {
   text-align: center;
-  width: 67%;
-  max-width: 350px;
+  width: 75%;
+  max-width: 500px;
   margin: auto;
   padding-bottom: 3px;
 }
 .resume h1 {
-  font-size: 200%;
+  font-size: 175%;
   font-weight: bold;
+  margin-bottom: 3px;
 }
 .resume h2 {
   width: 100%;
-  font-size: 175%;
+  font-size: 133%;
   font-weight: bold;
   margin-top: 10px;
   padding-bottom: 2px;
@@ -36,9 +37,8 @@
 .resume .columns {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 4px;
-  padding-top: 2px;
-  font-size: 110%;
+  padding-bottom: 2px;
+  padding-top: 6px;
 }
 .resume .columns > div {
   flex: 1;
@@ -50,9 +50,11 @@
 .resume .qualification {
   display: flex;
   justify-content: left;
+
 }
 .resume .qualification > div {
   padding: 5px;
+  padding-bottom: 0px;
   flex: 1;
   max-width: max-content;
 }
@@ -91,11 +93,11 @@
   margin-left: 15px;
   margin-bottom: 0px;
 }
-.resume li: : before {
-    content: '\2B25';
+.resume li::before {
+    content: '\25C6';
     position: absolute;
     left: -5px;
-    font-size: 12px;
+    font-size: 10px;
 }
 .resume li {
   padding-left: 10px;
