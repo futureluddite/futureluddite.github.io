@@ -1,115 +1,191 @@
-.post-title {
-  display: none;
+/* Generic stuff */
+.post-title
+{
+  display:                   none;
 }
-.post-header {
-  margin-bottom: unset;
+.post-header
+{
+  margin-bottom:             unset;
 }
-.resume {
-  font-family: 'Roboto', sans-serif;
-  max-width: 850px;
-  padding-left: 10px;
-  font-size: 85%;
-  line-height: 1.2;
+.resume
+{
+  font-family:               'Roboto', sans-serif;
+  max-width:                 850px;
+  padding-left:              10px;
+  font-size:                 85%;
+  line-height:               1.4;
 }
-.resume .header {
-  text-align: center;
-  width: 75%;
-  max-width: 500px;
-  margin: auto;
-  margin-bottom: -15px;
+.resume h1
+{
+  font-size:                 160%;
+  font-weight:               bold;
+  margin-top:                0px !important;
+  margin-bottom:             0px !important;
 }
-.resume .header > * {
-    margin-bottom: 5px;
-    margin: 0px;
+.resume h2
+{
+  width:                     100%;
+  font-size:                 133%;
+  font-weight:               bold;
+  margin-top:                0px;
+  margin-bottom:             0px;
+  padding-bottom:            2px;
+  border-bottom:             solid 2px black
 }
-.resume h1 {
-  font-size: 175%;
-  font-weight: bold;
-  margin-bottom: 3px;
+.resume p
+{
+  margin-bottom:             5px;
 }
-.resume h2 {
-  width: 100%;
-  font-size: 133%;
-  font-weight: bold;
-  margin-top: 10px;
-  padding-bottom: 2px;
-  margin-bottom: 1px;
-  border-bottom: solid 1px black
-}
-.resume .columns {
-  display: flex;
-  justify-content: space-between;
-  padding-bottom: 2px;
-  padding-top: 6px;
-}
-.resume .columns > div {
-  flex: 1;
-  width: 25%;
-  text-align: center;
-  font-weight: bold;
-  margin-right: 10px;
-}
-.resume .columns :first-child {
-    text-align: left !important;
-}
-.resume .columns :last-child {
-    text-align: right !important;
-}
-.resume .qualification {
-  display: flex;
-  justify-content: left;
-}
-.resume .qualification > div {
-  padding: 5px;
-  padding-bottom: 0px;
-  flex: 1;
-  max-width: max-content;
-}
-.resume .qtitle {
-  min-width: 120px !important;
-  font-weight: bold;
-  font-size: 110%;
-}
-.resume .qitem {
-  display: inline-block;
-  padding-right: 10px
+.resume a
+{
+  color:                     unset;
 }
 
-.resume .s1 {
-  font-weight: bold;
-  color: #000000;
+/* Header stuff */
+.resume .header
+{
+  text-align:                center;
+  width:                     80%;
+  margin:                    auto;
+  margin-top:                3px;
+  margin-bottom:             -0.75em;
 }
-.resume .s2 {
-  color: #333333;
+.resume .header > *
+{
+  margin-bottom:             3px;
+  text-wrap:                 balance;
 }
-.resume .resume .s3 {
-  color: #666666;
+.resume .header :last-child
+{
+  margin-bottom:             0px;
 }
-.resume .s4 {
-  color: #999999;
+
+/* Custom columns class */
+.resume .columns
+{
+  display:                   flex;
+  justify-content:           flex-start;
+  padding-bottom:            2px;
+  padding-top:               6px;
 }
-.resume .s5 {
-  color: #CCCCCC;
+.resume .columns > div
+{
+  flex:                      1;
+  text-align:                center;
+  font-weight:               bold;
+  margin-left:               2px;
+  margin-right:              2px;
 }
-.resume p {
-  margin-bottom: 5px;
+.resume .columns>div:first-child
+{
+  text-align:                left;
 }
-.resume ul {
-  list-style-type: none;
-  position: relative;
-  margin-left: 15px;
-  margin-bottom: 0px;
+.resume .columns>div:last-child
+{
+  text-align:                right;
+  height:                    1em;
 }
-.resume li::before {
-    content: '\25C6';
-    position: absolute;
-    left: -5px;
-    font-size: 10px;
+.resume .columns>div>div
+{
+  text-align:                center;
+  display:                   inline-block;
+  height:                    max-content;
+  width:                     75%;
 }
-.resume li {
-  padding-left: 10px;
-  padding-bottom: 1px;
+.resume .columns>div:first-child div
+{
+  width:                     unset;
 }
-.resume a {
-  color: unset;
+.resume .columns>div:last-child div
+{
+  text-align:                right;
+}
+
+/* Experience/Job Stuff */
+.resume .experience > div
+{
+  padding-bottom:            5px;
+}
+.resume .experience .job
+{
+  margin-bottom:             10px;
+  padding-bottom:            2px;
+  margin-bottom:             1px;
+  border-bottom:             solid 1px #999999;
+}
+.resume .experience :last-child{
+  border-bottom:             unset;
+}
+.resume .experience .accomplishments li:first-child
+{
+  padding-right:             90px;
+}
+
+/* Qualification/Skill Stuff */
+.resume .qualification
+{
+  display:                   flex;
+  justify-content:           left;
+}
+.resume .qualification > div
+{
+  padding:                   5px;
+  padding-bottom:            0px;
+  flex:                      1;
+  max-width:                 max-content;
+}
+.resume .qualification .qtitle
+{
+  min-width:                 120px;
+  font-weight:               bold;
+  font-size:                 110%;
+}
+.resume .qualification .qitem
+{
+  display:                   inline-block;
+  padding-right:             10px
+}
+.resume .qualification .s1
+{
+  font-weight:               bold;
+  color:                     #000000;
+}
+.resume .qualification .s2
+{
+  color:                     #333333;
+}
+.resume .qualification .s3
+{
+  color:                     #666666;
+}
+.resume .qualification .s4
+{
+  color:                     #999999;
+}
+.resume .qualification .s5
+{
+  color:                     #CCCCCC;
+}
+
+/* Custom bullets */
+.resume ul
+{
+  list-style-type:           none;
+  padding-left:              10px;
+  position:                  relative;
+  margin-left:               15px;
+  margin-bottom:             0px;
+  margin-top:                0px;
+}
+.resume li::before
+{
+  content:                   '\25C6';
+  position:                  absolute;
+  left:                      -5px;
+  font-size:                 10px;
+}
+.resume li
+{
+  padding-left:              -5px;
+  padding-bottom:            1px;
 }
