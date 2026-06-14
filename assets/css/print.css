@@ -1,8 +1,14 @@
-header, footer {
-  display: none;
+header, footer 
+{
+  display:                   none;
 }
-.page-content, .wrapper, .resume{
-  padding: unset;
-  margin: unset;
-  max-width: unset;
+.page-content, .wrapper, .resume
+{
+  padding:                   unset;
+  margin:                    unset;
+  max-width:                 unset;
+}
+.resume a
+{
+  text-decoration:           none;
 }
